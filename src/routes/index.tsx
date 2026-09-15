@@ -61,7 +61,7 @@ const projects = [
   {
     number: "02", title: "Rekonsiliasi Bank", icon: Landmark,
     description: "Alur kerja rekonsiliasi bank yang membandingkan catatan keuangan perusahaan dengan mutasi bank untuk menemukan selisih dan memastikan keakuratan transaksi.",
-    skills: ["Rekonsiliasi Bank", "Excel", "Financial Data Analysis"],
+    skills: ["Rekonsiliasi Bank", "Excel", "Analisis Data Keuangan"],
     detail: "Alur kerja ini mencocokkan mutasi bank harian dengan catatan internal, memisahkan transaksi yang belum sesuai, dan mendukung proses rekonsiliasi yang dapat ditelusuri.",
   },
   {
@@ -79,7 +79,7 @@ const projects = [
 ];
 
 const skillGroups = [
-  { label: "Accounting & Finance", items: ["Accounts Receivable", "Rekonsiliasi Bank", "Invoicing", "Financial Data Processing", "General Accounting", "AR Aging", "Marketplace Settlement", "Tax Administration"] },
+  { label: "Akuntansi & Keuangan", items: ["Piutang Usaha", "Rekonsiliasi Bank", "Pembuatan Faktur", "Pengolahan Data Keuangan", "Akuntansi Umum", "Umur Piutang", "Penyelesaian Transaksi Marketplace", "Administrasi Perpajakan"] },
   { label: "Teknologi & Data", items: ["Microsoft Excel", "SAP Business One", "Analisis Data", "Pengolahan Data", "Teknologi Informasi", "Peningkatan Proses"] },
   { label: "Excel", items: ["VLOOKUP", "XLOOKUP", "HLOOKUP", "SUM", "SUMIF", "SUMIFS", "Pivot Table", "Validasi Data", "Analisis Keuangan Dasar"] },
 ];
@@ -148,8 +148,8 @@ function Portfolio() {
               <p>Saya tertarik untuk terus berkembang dalam Akuntansi, Keuangan, Piutang Usaha, Analisis Keuangan, serta peran yang mempertemukan Keuangan dan Teknologi.</p>
             </div>
             <div className="grid gap-px border border-border bg-border sm:grid-cols-2">
-              <Capability title="Accounting & Finance" icon={<Landmark size={20}/>} items={["Accounts Receivable","Rekonsiliasi Bank","Invoicing","Financial Data Processing","Marketplace Settlement","Tax Administration","Financial Reporting Support"]}/>
-              <Capability title="Technology" icon={<MonitorCog size={20}/>} items={["Teknologi Informasi","SAP Business One","Microsoft Excel","Pengolahan Data","Pemikiran Analitis","Peningkatan Proses","Sistem Digital"]}/>
+              <Capability title="Akuntansi & Keuangan" icon={<Landmark size={20}/>} items={["Piutang Usaha","Rekonsiliasi Bank","Pembuatan Faktur","Pengolahan Data Keuangan","Penyelesaian Transaksi Marketplace","Administrasi Perpajakan","Dukungan Pelaporan Keuangan"]}/>
+              <Capability title="Teknologi" icon={<MonitorCog size={20}/>} items={["Teknologi Informasi","SAP Business One","Microsoft Excel","Pengolahan Data","Pemikiran Analitis","Peningkatan Proses","Sistem Digital"]}/>
             </div>
           </div>
         </section>
@@ -158,7 +158,7 @@ function Portfolio() {
           <div className="section-wrap">
             <SectionHeading index="02" eyebrow="Riwayat Karier" title="Pengalaman Profesional" />
             <div className="mt-14 grid gap-12 lg:grid-cols-[18rem_1fr]">
-              <div><p className="role-date">Jan 2024 — Sekarang</p><h3 className="mt-2 font-display text-2xl">PT Aditya Sriwijaya</h3><p className="mt-1 font-semibold text-accent">Accounting</p></div>
+              <div><p className="role-date">Jan 2024 — Sekarang</p><h3 className="mt-2 font-display text-2xl">PT Aditya Sriwijaya</h3><p className="mt-1 font-semibold text-accent">Akuntansi</p></div>
               <div>
                 <div className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
                   {["Pengelolaan Piutang Usaha","Verifikasi transaksi bank harian","Rekonsiliasi BCA & Mandiri","Penyelesaian piutang melalui SAP Business One","Pemantauan deposit pelanggan dan kelebihan penarikan","Penagihan penjualan dan pembuatan faktur harian","Pemantauan penyelesaian transaksi marketplace","Pemantauan umur dan saldo piutang","Rekonsiliasi bank","Dukungan administrasi perpajakan","Pengelolaan dokumen keuangan","Dukungan stok opname bulanan"].map(item => <div className="flex gap-3 border-b border-border py-3 text-sm" key={item}><Check className="mt-0.5 shrink-0 text-accent" size={16}/><span>{item}</span></div>)}
@@ -236,7 +236,7 @@ function Portfolio() {
         <section id="contact" className="section-wrap text-center">
           <p className="eyebrow mx-auto w-fit">Terbuka untuk peluang yang tepat</p>
           <h2 className="mx-auto mt-7 max-w-3xl font-display text-4xl font-semibold sm:text-6xl">Mari membangun proses keuangan yang lebih akurat dan efisien.</h2>
-          <p className="mx-auto mt-7 max-w-2xl leading-7 text-muted-foreground">I’m open to opportunities, professional connections, and conversations around Accounting, Finance, Accounts Receivable, Financial Analysis, and Finance & Teknologi.</p>
+          <p className="mx-auto mt-7 max-w-2xl leading-7 text-muted-foreground">Saya terbuka untuk peluang, koneksi profesional, dan diskusi seputar Akuntansi, Keuangan, Piutang Usaha, Analisis Keuangan, serta Keuangan & Teknologi.</p>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <button disabled className="button-primary" title="Profil LinkedIn belum tersedia"><Linkedin size={16}/> LinkedIn</button>
             <button disabled className="button-secondary" title="Alamat email belum tersedia"><Mail size={16}/> Email</button>
